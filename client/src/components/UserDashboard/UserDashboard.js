@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import AppBar from './components/AppBar/AppBar';
-import Grid from './components/Grid/Grid';
+import AppBar from '../AppBar/AppBar';
+import UserDashboardGrid from '../Grid/UserDashboardGrid';
 
-class App extends Component {
+
+class UserDashboard extends Component {
   render() {
     return (
       <div className="App">
       <AppBar />
         <header className="App-header">
           <div>
-            <Grid />
+            <UserDashboardGrid />
           </div>
         </header>
       </div>
@@ -18,4 +18,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default UserDashboard;

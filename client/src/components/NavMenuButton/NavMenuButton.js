@@ -27,7 +27,7 @@ class SimpleMenu extends React.Component {
           color="inherit"
           onClick={this.handleClick}
         >
-          Open Menu
+          Menu
         </Button>
         <Menu
           id="simple-menu"
@@ -36,7 +36,9 @@ class SimpleMenu extends React.Component {
           onClose={this.handleClose}
         >
           <MenuItem onClick={this.handleClose}>Purpose</MenuItem>
-          <MenuItem onClick={this.handleClose}>Team Members</MenuItem>
+          <MenuItem onClick={this.handleClose}>Login</MenuItem>
+          <MenuItem onClick={this.handleClose}>Create Menu</MenuItem>
+          <MenuItem onClick={this.handleClose}>Dashboard</MenuItem>
           <MenuItem onClick={this.handleClose}>Logout</MenuItem>
         </Menu>
       </div>

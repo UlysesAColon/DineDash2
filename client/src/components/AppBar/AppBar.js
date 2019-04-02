@@ -6,7 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuButton from '../MenuButton/MenuButton';
+import MenuButton from '../NavMenuButton/NavMenuButton';
 
 const styles = {
   root: {
@@ -34,6 +34,9 @@ function ButtonAppBar(props) {
             DineDash
           </Typography>
           <Button color="inherit">Login</Button>
+          <Button color="inherit">Dashboard</Button>
+          <Button color="inherit">Menu</Button>
+          <Button color="inherit">Logout</Button>
         </Toolbar>
       </AppBar>
     </div>

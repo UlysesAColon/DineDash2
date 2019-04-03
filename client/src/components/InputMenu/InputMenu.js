@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import AppBar from '../AppBar/AppBar';
 import MenuFormGrid from '../Grid/MenuFormGrid';
 import { MuiThemeProvider , createMuiTheme } from '@material-ui/core';
-import {red } from '@material-ui/core/colors';
+
 
 const theme = createMuiTheme({
-    palette: {
-        primary: {
-          main:'#7c40ff',
-    }
+  palette: {
+      action:{
+          active: '#1d1e22'
+      },
+      primary: {
+        main:'#7c40ff',
+  },
+      text: '#1d1e22'
 }
 })
 class InputMenu extends Component {

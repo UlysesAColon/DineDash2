@@ -35,7 +35,6 @@ class SimpleMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          <MenuItem onClick={this.handleClose}>Purpose</MenuItem>
           <MenuItem onClick={this.handleClose}>Login</MenuItem>
           <MenuItem onClick={this.handleClose}>Create Menu</MenuItem>
           <MenuItem onClick={this.handleClose}>Dashboard</MenuItem>

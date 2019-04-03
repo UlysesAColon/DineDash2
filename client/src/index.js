@@ -7,13 +7,19 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import InputMenu from './components/InputMenu/InputMenu';
 import { MuiThemeProvider , createMuiTheme } from '@material-ui/core';
-import {red, amber } from '@material-ui/core/colors';
+import {red } from '@material-ui/core/colors';
+
 
 const theme = createMuiTheme({
     palette: {
-        primary: red,
+        action:{
+            active: '#1d1e22'
+        },
+        primary: {
+          main:'#7c40ff',
+    },
         text: '#1d1e22'
-    }
+}
 })
 console.log(theme);
 ReactDOM.render(
@@ -33,7 +39,6 @@ ReactDOM.render(
          <InputMenu />
         </div>
      )}/>
-     
     <Route exact ={true}path="/" component={App}>
     </Route>
 </Router> 

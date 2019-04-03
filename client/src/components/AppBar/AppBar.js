@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuButton from '../NavMenuButton/NavMenuButton';
-
+import { Link } from 'react-router-dom';
 const styles = {
   root: {
     flexGrow: 1,
@@ -33,9 +33,8 @@ function ButtonAppBar(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             DineDash
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Dashboard</Button>
-          <Button color="inherit">Menu</Button>
+          <Button component={Link} to="/userdashboard/" color="inherit">Dashboard</Button>
+          <Button component={Link} to="/usermenu/"color="inherit">Menu</Button>
           <Button color="inherit">Logout</Button>
         </Toolbar>
       </AppBar>

@@ -41,7 +41,7 @@ function MenuFormGrid(props) {
           <KitchenIcon className={classes.rightIcon} />
           </Button>
           &nbsp;
-          <Button variant="contained" color="secondary" className={classes.button}>Add Menu Item
+          <Button variant="contained" color="primary" className={classes.button}>Add Menu Item
           <RestaurantIcon className={classes.rightIcon} />
           </Button>          
           </div>

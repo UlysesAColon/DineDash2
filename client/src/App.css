@@ -9,7 +9,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: url("../src/images/sitebackground.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,4 +68,13 @@ a:visited {
 .centerbuttons{
   display: flex;
   justify-content: center;
+}
+.MuiAppBar-colorPrimary-11.hello{
+  background-image: linear-gradient(to right, #7c40ff, #3f51b5);
+}
+.CenteredGrid-paper-120{
+  color: #1d1e22;
+}
+.menutable{
+  color: #1d1e22;
 }

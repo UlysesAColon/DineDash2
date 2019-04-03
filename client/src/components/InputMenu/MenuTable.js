@@ -17,6 +17,14 @@ const styles = theme => ({
   table: {
     minWidth: 700,
   },
+  tableRow: {
+    cursor: 'pointer',
+  },
+  tableRowHover: {
+    '&:hover': {
+      backgroundColor: theme.palette.grey[200],
+    },
+  },
 });
 
 let id = 0;

@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
       <AppBar />
         <header className="App-header">
-          <div>
+          <div text="text">
             <Grid />
           </div>
         </header>

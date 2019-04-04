@@ -4,9 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import face from '../../images/face.jpg';
-import blackpanther from '../../images/blackpanther.png';
-import robot from '../../images/robot.jpg';
-import gorilla from '../../images/gorilla.jpg';
 import {MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 import LoginForm from '../LoginForm/LoginForm';
 

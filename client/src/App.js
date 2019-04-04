@@ -27,9 +27,7 @@ class App extends Component {
   changeTheWorld = (newTitle) => {
     this.setState({title:newTitle});
   }
-  // keepTheWorldSame = (newTitle) => {
-  //   this.setState({title:newTitle});
-  // }
+
   render() {
     setTimeout(() => {
       this.setState({name: "Bob"});

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import CustomerTable from '../UserDashboard/CustomerTable/CustomerTable';
+import CustomerTableLanding from '../UserDashboard/CustomerTable/CustomerTableLanding'
 import { Button } from '@material-ui/core';
 
 const styles = theme => ({
@@ -63,7 +63,7 @@ class Clock extends React.Component {
 
 function CenteredGrid(props) {
   const { classes } = props;
-
+  
   return (
 
     <div className={classes.root}>
@@ -79,8 +79,7 @@ function CenteredGrid(props) {
               <Clock />
             </div>
             <br></br>
-            <Button variant="contained" color="primary">Add Table Button</Button>
-            <CustomerTable />
+            <CustomerTableLanding />
           </div>
           </Paper>
         </Grid>

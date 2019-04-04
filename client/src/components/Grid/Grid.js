@@ -56,24 +56,16 @@ function CenteredGrid(props) {
           <p className="title">The Team</p>
           <hr></hr>
           <img src={face} alt="Ulyses face" className="faceimage" />
-          <p>Ulyses Colon</p>
-          <img src={blackpanther} alt="blackpanther" className="faceimage" />
-          <img src={robot} alt="robot" className="faceimage" />
-          <img src={gorilla} alt="gorilla" className="faceimage" />
+          <hr></hr>
+          <a href="https://github.com/UlysesAColon/">Ulyses Colon</a>
           </div>
           </Paper>
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-          <div>
-          <p>
-          Please Enter Your Information
-          </p>
-          <hr></hr>
            <LoginForm 
              loginChange={props.handleChangeEvent}
            />
-          </div>
           </Paper>
         </Grid>
       </Grid>

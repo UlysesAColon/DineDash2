@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import AppBar from './components/AppBar/AppBar';
 import Grid from './components/Grid/Grid';
-import Child from './components/Childtest/Child';
 import Parent from './components/Childtest/Parent';
 
 class App extends Component {
@@ -11,7 +10,7 @@ class App extends Component {
 
   this.state ={
     title: 'placeholder title',
-    name: 'Please enter a username',
+    name: 'Mike',
     age: '',
     multiline: 'Controlled',
     currency: 'EUR',
@@ -34,16 +33,12 @@ class App extends Component {
   render() {
     setTimeout(() => {
       this.setState({name: "Bob"});
-    }, 1000)
+    }, 10000)
     return (
       <div className="App">
       <AppBar />
         <header className="App-header">
           <div text="text">
-          {this.state.name}
-          <Parent changeTheWorldEvent={this.changeTheWorld.bind(this, 'new world')} 
-                  keepTheWorldSameEvent={this.changeTheWorld.bind(this, 'same world')}
-          title={this.state.title}/>
             <Grid  handleChangeEvent={this.handleChange.bind(this)}/>
           </div>
         </header>

@@ -25,12 +25,14 @@ const styles = theme => ({
 
 class LoginForm extends React.Component {
     state ={
-        title: 'placeholder title',
+        welcome: 'Welcome, ',
         name: 'Please enter a username',
         age: '',
         multiline: 'Controlled',
         currency: 'EUR',
       }
+
+
     handleChange = name => event => {
       this.setState({
         [name]: event.target.value,
@@ -38,13 +40,15 @@ class LoginForm extends React.Component {
     console.log(this.state.name)
     };
 
-    handleSubmit(event) {
-        console.log('A name was submitted: ' + this.state.value);
-    }
     render() {
         const { classes } = this.props;
         
         return (
+            <div>
+            <p>
+            {this.state.welcome}{this.state.name}
+            </p>
+            <hr></hr>
             <form className={classes.container} noValidate autoComplete="off">
           <TextField
             required
@@ -52,16 +56,7 @@ class LoginForm extends React.Component {
             label="Username"
             className={classes.textField}
             value={this.state.name}
-            onChange={this.handleChange('name')}
-            margin="normal"
-            variant="filled"
-          />
-  
-          <TextField
-            id="filled-uncontrolled"
-            label="Uncontrolled"
-            defaultValue="foo"
-            className={classes.textField}
+            onChange={this.handleChange('name')} 
             margin="normal"
             variant="filled"
           />
@@ -77,8 +72,9 @@ class LoginForm extends React.Component {
           margin="normal"
           variant="filled"
         />
-        <input type="submit" value="Submit" />
+
      </form>
+     </div>
        );
     }
 }

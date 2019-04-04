@@ -30,12 +30,13 @@ function MenuFormGrid(props) {
       <div className="gridwrapper">
       <Grid container spacing={24}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>Welcome "name" to your User Dashboard!</Paper>
+          <Paper className={classes.paper}>"Name" Dashboard</Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
           <div>
           <p>This is where Menus will be created</p>
+          <hr></hr>
           <div className="centerbuttons">
           <Button variant="contained" color="primary" className={classes.button}>Add Menu Class
           <KitchenIcon className={classes.rightIcon} />

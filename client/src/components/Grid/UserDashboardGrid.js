@@ -1,9 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import CustomerTable from '../UserDashboard/CustomerTable/CustomerTable';
+import { Button } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -16,10 +17,55 @@ const styles = theme => ({
   },
 });
 
+
+function FormattedDate(props) {
+  return <h2>
+  <hr></hr>The time right now is:&nbsp;
+  <div>
+  {props.date.toLocaleTimeString()}.
+  </div></h2>;
+}
+
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date:new Date()};
+  }
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+  );
+  }
+  
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+}
+  render(){
+    return(
+      <div>
+        <h1> Hello, User</h1>
+        <FormattedDate date={this.state.date} />
+        <hr></hr>
+      </div>
+    );
+  }
+}
+
+
+
+
 function CenteredGrid(props) {
   const { classes } = props;
 
   return (
+
     <div className={classes.root}>
       <div className="gridwrapper">
       <Grid container spacing={24}>
@@ -29,7 +75,11 @@ function CenteredGrid(props) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
           <div>
-            This is where Tables will Propigate
+            <div>
+              <Clock />
+            </div>
+            <br></br>
+            <Button variant="contained" color="primary">Add Table Button</Button>
             <CustomerTable />
           </div>
           </Paper>

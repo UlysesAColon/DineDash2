@@ -81,3 +81,14 @@ a:visited {
 .MenuFormGrid-paper-816{
   color: #1d1e22;
 }
+.tablelistbtn{
+  list-style: none;
+  background-image: url("./images/wood.png");
+  max-width: 25%;
+  max-height: 25%;
+  align-items: center;
+  justify-content: center;
+}
+.tablebtn{
+  margin: 0 auto;
+}

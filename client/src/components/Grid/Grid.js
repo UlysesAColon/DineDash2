@@ -7,6 +7,7 @@ import face from '../../images/face.jpg';
 import blackpanther from '../../images/blackpanther.png';
 import robot from '../../images/robot.jpg';
 import gorilla from '../../images/gorilla.jpg';
+import {MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -19,10 +20,24 @@ const styles = theme => ({
   },
 });
 
+
+const theme = createMuiTheme({
+  palette: {
+      action:{
+          active: '#1d1e22'
+      },
+      primary: {
+        main:'#7c40ff',
+  },
+      text: '#1d1e22'
+}
+})
+
 function CenteredGrid(props) {
   const { classes } = props;
 
   return (
+    <MuiThemeProvider theme={theme}>
     <div className={classes.root}>
       <div className="gridwrapper">
       <Grid container spacing={24}>
@@ -50,19 +65,16 @@ function CenteredGrid(props) {
         <Grid item xs={6}>
           <Paper className={classes.paper}>
           <div>
-            <p className="title">Github pages</p>
-            <ul>
-            <li><a href="https://github.com/UlysesAColon/">Ulyses Colon</a></li>
-            <li><a href="https://github.com/anthony1536">Anthony Ferreira</a></li>
-            <li><a href="https://github.com/CoMoFo">Cornelius Mountain Foote</a></li>
-            <li><a href="https://github.com/UlysesAColon/">Andrew Neves</a></li>
-            </ul>
+          <p>
+            Login div
+          </p>
           </div>
           </Paper>
         </Grid>
       </Grid>
       </div>
     </div>
+    </MuiThemeProvider>
   );
 }
 

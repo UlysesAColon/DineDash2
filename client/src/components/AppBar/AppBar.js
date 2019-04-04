@@ -35,7 +35,7 @@ function ButtonAppBar(props) {
           </Typography>
           <Button component={Link} to="/userdashboard/" color="inherit">Dashboard</Button>
           <Button component={Link} to="/usermenu/"color="inherit">Menu</Button>
-          <Button color="inherit">Logout</Button>
+          <Button component={Link} to="/"color="inherit">Home</Button>
         </Toolbar>
       </AppBar>
     </div>

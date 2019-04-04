@@ -25,6 +25,8 @@ function MenuFormGrid(props) {
   const { classes } = props;
   console.log(props)
   console.log(props.foodclass.subject[1])
+  console.log(props.state)
+
   return (
     <div className={classes.root}>
       <div className="gridwrapper">

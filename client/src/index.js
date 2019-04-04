@@ -9,7 +9,6 @@ import InputMenu from './components/InputMenu/InputMenu';
 import { MuiThemeProvider , createMuiTheme } from '@material-ui/core';
 
 
-
 const theme = createMuiTheme({
     palette: {
         action:{
@@ -21,7 +20,10 @@ const theme = createMuiTheme({
         text: '#1d1e22'
 }
 })
+
+
 console.log(theme);
+
 ReactDOM.render(
 
     <MuiThemeProvider theme={theme} >
@@ -29,7 +31,7 @@ ReactDOM.render(
     <Route exact ={true}path="/home/" render={() =>(
         <h1> Welcome! </h1>
     )}/>
-     <Route exact ={true}path="/userdashboard/" render={() =>(
+     <Route exact ={true}path="/userdashboard/" render={(props) =>(
         <div>
          <UserDashBoard />
         </div>

@@ -8,6 +8,7 @@ import blackpanther from '../../images/blackpanther.png';
 import robot from '../../images/robot.jpg';
 import gorilla from '../../images/gorilla.jpg';
 import {MuiThemeProvider, createMuiTheme } from '@material-ui/core';
+import LoginForm from '../LoginForm/LoginForm';
 
 const styles = theme => ({
   root: {
@@ -35,7 +36,6 @@ const theme = createMuiTheme({
 
 function CenteredGrid(props) {
   const { classes } = props;
-
   return (
     <MuiThemeProvider theme={theme}>
     <div className={classes.root}>
@@ -54,6 +54,7 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
           <div>
           <p className="title">The Team</p>
+          <hr></hr>
           <img src={face} alt="Ulyses face" className="faceimage" />
           <p>Ulyses Colon</p>
           <img src={blackpanther} alt="blackpanther" className="faceimage" />
@@ -66,8 +67,12 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
           <div>
           <p>
-            Login div
+          Please Enter Your Information
           </p>
+          <hr></hr>
+           <LoginForm 
+             loginChange={props.handleChangeEvent}
+           />
           </div>
           </Paper>
         </Grid>

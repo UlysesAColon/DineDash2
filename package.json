@@ -30,7 +30,7 @@
     "history": "^1.17.0",
     "mongoose": "^5.4.20",
     "nodemon": "^1.18.10",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "react": "^16.8.5",
     "react-router": "^5.0.0",
     "react-router-dom": "^4.4.0-beta.8"
